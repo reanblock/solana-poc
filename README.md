@@ -52,9 +52,10 @@ v20.19.2
 
 ## Build & Test
 
-To build and test run
+To build and test from a fresh clone:
 
 ```bash
+yarn
 anchor build
 anchor test
 ```
