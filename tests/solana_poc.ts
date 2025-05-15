@@ -13,7 +13,7 @@ describe("Solana PoC Program", () => {
  
   it("Is initialized!", async () => {
     const tx = await program.methods
-      .initialize()
+      .initializeCounter()  
       .accounts({ counter: counter.publicKey })
       .signers([counter])
       .rpc();
@@ -24,7 +24,7 @@ describe("Solana PoC Program", () => {
  
   it("Incremented the count", async () => {
     const tx = await program.methods
-      .increment()
+      .incrementCounter()
       .accounts({ counter: counter.publicKey, user: provider.wallet.publicKey })
       .rpc();
    

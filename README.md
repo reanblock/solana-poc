@@ -55,10 +55,15 @@ v20.19.2
 To build and test from a fresh clone:
 
 ```bash
+export COPYFILE_DISABLE=1
 yarn
 anchor build
 anchor test
 ```
+
+These commands will install, build, compile and test the program with all tests passing!
+
+**NOTE**: the `COPYFILE_DISABLE` is requierd for Mac users otherwise the validator will not automatically start!
 
 ## How this program was originally setup
 
@@ -75,3 +80,7 @@ solana config set --url localhost
 anchor keys sync
 anchor test
 ```
+
+## Troubleshooting
+
+Try following [this example](https://www.rareskills.io/post/hello-world-solana) if you are stuck!
