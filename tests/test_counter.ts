@@ -5,7 +5,7 @@ import { SolanaPoc } from "../target/types/solana_poc";
 // helper to print any msg! statements to the console
 import { printTxLogs } from './helpers/printTxLogs'
  
-describe("Solana PoC Program", () => {
+describe("Solana PoC Program:: Counter", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
  
